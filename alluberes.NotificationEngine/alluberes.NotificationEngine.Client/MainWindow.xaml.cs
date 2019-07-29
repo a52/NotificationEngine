@@ -50,7 +50,7 @@ namespace alluberes.NotificationEngine.Client
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error enviado correo", ex.ToString());
+                MessageBox.Show(ex.ToString(), "Error enviado correo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
