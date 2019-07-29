@@ -1,0 +1,36 @@
+﻿<Window x:Class="alluberes.NotificationEngine.Client.wConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:alluberes.NotificationEngine.Client"
+        mc:Ignorable="d"
+        Title="wConfig" Height="355.509" Width="530.561">
+    <Grid>
+        <TabControl Margin="29,70,15,39">
+            <TabItem Header="Email">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Servidor" HorizontalAlignment="Left" Margin="97,21,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+                    <Label Content="Puerto" HorizontalAlignment="Left" Margin="106,47,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+                    <Label Content="Usuario" HorizontalAlignment="Left" Margin="101,73,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+                    <Label Content="Clave" HorizontalAlignment="Left" Margin="113,104,0,0" VerticalAlignment="Top" Height="26" Width="38"/>
+                    <CheckBox x:Name="cbEmailUserSSL" Content="Uso de Certificado" HorizontalAlignment="Left" Margin="156,136,0,0" VerticalAlignment="Top" Height="15" Width="118"/>
+                    <Button x:Name="cmdEmailSave" Content="Guardar" HorizontalAlignment="Left" Margin="380,151,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="CmdEmailSave_Click"/>
+                    <PasswordBox x:Name="txtEmailPassword" HorizontalAlignment="Left" Margin="156,104,0,0" VerticalAlignment="Top" Width="299"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="cmdClose" Content="Cerrar" Margin="433,0,15,12" Click="CmdClose_Click" Height="22" VerticalAlignment="Bottom"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,24,0,0" TextWrapping="Wrap" Text="Configuración" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtEmailUser" HorizontalAlignment="Left" Height="23" Margin="191,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <TextBox x:Name="txtEmailServerPort" HorizontalAlignment="Left" Height="23" Margin="191,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmailServer" HorizontalAlignment="Left" Height="23" Margin="191,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+
+    </Grid>
+</Window>

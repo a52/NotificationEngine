@@ -53,5 +53,12 @@ namespace alluberes.NotificationEngine.Client
                 MessageBox.Show(ex.ToString(), "Error enviado correo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void CmdConfig_Click(object sender, RoutedEventArgs e)
+        {
+            var frmConfig = new wConfig();
+            frmConfig.ShowDialog();
+
+        }
     }
 }
