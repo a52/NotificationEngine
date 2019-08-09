@@ -60,5 +60,21 @@ namespace alluberes.NotificationEngine.Client
             frmConfig.ShowDialog();
 
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.txtFrom.Text = SharedFunctions.GetEmailUserName();
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnLoadFile_Click(object sender, RoutedEventArgs e)
+        {
+            var frmLoadFile = new wLoadFIle();
+            frmLoadFile.ShowDialog();
+        }
     }
 }
